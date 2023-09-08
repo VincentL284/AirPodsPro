@@ -17,7 +17,7 @@ header{
     //------------------------
 
 .nav-primary {
-    background-color: transparent;
+    background: var(--color-bg-primary);
     position: absolute;
     top: 0;
     right: 0;
@@ -35,7 +35,7 @@ header{
     transform: translateX(200%);
     transition: all 0.5s ease-out;
 
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-ml) {
         transform: none;
         position: relative;
         height: auto;
@@ -44,6 +44,7 @@ header{
         display: block;
         z-index: 2;
         overflow-y: hidden;
+        background: transparent;
     }
     ul {
         display: flex;
@@ -54,7 +55,7 @@ header{
         padding: 0;
         width: 100%;
         margin: auto;
-        @media screen and (min-width: $breakpoint-md) {
+        @media screen and (min-width: $breakpoint-ml) {
             flex-direction: row;
         }
     }
@@ -67,7 +68,9 @@ header{
 }
 
 
-
+#remove_bg{
+    background: none;
+}
 .header__toggle {
     --bar-height: 8px;
     --bar-spacer: 6px;
@@ -83,7 +86,7 @@ header{
     height: 50px;
     z-index: 5;
     display: block;
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-ml) {
         display: none;
     }
 

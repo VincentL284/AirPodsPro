@@ -1,0 +1,95 @@
+.faq{
+    background: var(--color-bg-primary);
+    color: var(--color-white-on-black);
+    text-align: center;
+    padding: 40px;
+
+    fieldset{
+        border: none;
+    }
+
+    .questions{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        
+        margin-top: 40px;
+
+        .accordion__container {
+            background: var(--color-bg-secondary);
+            border-radius: 40px;
+            padding: 20px 30px 50px;
+            position: relative;
+            border: 3px solid transparent;
+
+
+            &:hover{
+                border: 3px solid var(--color-white);
+                box-sizing: border-box;
+            }
+            //.accordion__content représente le contenu caché par défaut
+            .accordion__content {
+                display: none;
+                transition: all 0.3s ease-out;
+                
+            }
+            &.content-is-active {
+                .accordion__content {
+                    //On affiche le contenu lorsqu'il y a l'état is-active
+                    display: block;
+                }
+                
+            }
+        }
+        .accordion__header{
+            &:hover{
+                cursor: pointer;
+                .bouton_accordion{
+                    transform: translateX(-50%) rotateZ(90deg);
+                    
+                }
+            }
+        }
+
+        .bouton_accordion {
+            z-index: 6;
+            width: 50px;
+            height: 50px;
+            display: block;
+            position: absolute;
+            background-color: var(--color-secondary);
+            border-radius: 100%;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: 0;
+            margin-bottom: 10px;
+            transition: all 0.1s ease-out;
+            &.content-is-active {
+                transform: rotateZ(45deg);
+            }
+            &:hover {
+                background-color: var(--color-bg-secondary);
+                cursor: pointer;
+                
+            }
+    
+            span {
+                width: 6px;
+                height: 30px;
+                border-radius: 5px;
+                background-color: var(--color-white);
+                z-index: 8;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    
+                &:nth-child(1) {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+        }
+    }
+    
+}
