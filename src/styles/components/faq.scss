@@ -13,63 +13,91 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 60px;
+        h4{
+            margin: 0;
+        }
         
         margin-top: 40px;
 
         .accordion__container {
-            background: var(--color-bg-secondary);
+            
+            
             border-radius: 40px;
-            padding: 20px 30px 50px;
-            position: relative;
-            border: 3px solid transparent;
+            
+            
+            
+            .accordion__header{
+                padding: 20px 30px 50px;
+                border-radius: 40px;
+                position: relative;
+                background: var(--color-bg-secondary);
+                &:hover {
+                    .bouton_accordion{
+                        background-color: var(--color-black);
+                        transform: translateX(-50%) scale(120%);
+                    }
+                    
+                    span{
+                        background: var(--color-white);
+                    }
+    
+                    cursor: pointer;
+                    
+                }
 
-
-            &:hover{
-                border: 3px solid var(--color-white);
-                box-sizing: border-box;
             }
+            
             //.accordion__content représente le contenu caché par défaut
             .accordion__content {
                 display: none;
-                transition: all 0.3s ease-out;
+                
                 
             }
             &.content-is-active {
+                background: var(--color-bg-secondary);
                 .accordion__content {
                     //On affiche le contenu lorsqu'il y a l'état is-active
                     display: block;
+                    padding: 20px;
+
+                    
+                }
+                .accordion__header{
+                background: transparent;
+
+                    
+                    span {
+                        
+            
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                    }
                 }
                 
             }
         }
-        .accordion__header{
-            &:hover{
-                cursor: pointer;
-                .bouton_accordion{
-                    transform: translateX(-50%) rotateZ(90deg);
-                    
-                }
-            }
-        }
+        
 
         .bouton_accordion {
             z-index: 6;
             width: 50px;
             height: 50px;
-            display: block;
             position: absolute;
-            background-color: var(--color-secondary);
+            background-color: var(--color-white);
             border-radius: 100%;
             transform: translateX(-50%);
             left: 50%;
+            transition: all 0.1s ease-out;
             bottom: 0;
             margin-bottom: 10px;
-            transition: all 0.1s ease-out;
-            &.content-is-active {
-                transform: rotateZ(45deg);
-            }
+            
             &:hover {
-                background-color: var(--color-bg-secondary);
+                background-color: var(--color-black);
+                span{
+                    background: var(--color-bg-secondary);
+                }
+
                 cursor: pointer;
                 
             }
@@ -78,7 +106,7 @@
                 width: 6px;
                 height: 30px;
                 border-radius: 5px;
-                background-color: var(--color-white);
+                background: var(--color-bg-secondary);
                 z-index: 8;
                 position: absolute;
                 top: 50%;

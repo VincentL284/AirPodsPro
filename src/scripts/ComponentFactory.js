@@ -1,5 +1,7 @@
 import Carousel from './components/Carousel';
 import Header from './components/Header';
+import Accordion from './components/Accordion';
+
 
 
 export default class ComponentFactory {
@@ -8,6 +10,7 @@ export default class ComponentFactory {
     this.componentList = {
       Carousel,
       Header,
+      Accordion,
     };
     this.init();
   }
