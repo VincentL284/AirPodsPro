@@ -1,0 +1,32 @@
+.caracteristiques{
+    text-align: center;
+    background-color: var(--color-black);
+    color: var(--color-white-on-black);
+
+    .sm_wrapper{
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        margin-top: 50px;
+
+        .card{
+            h4{
+                margin-bottom: 0;
+            }
+            img{
+                transition: all 0.2s ease-out;
+            }
+            &:hover{
+                img{
+                    transform: scale(125%);
+                }
+            }
+        }
+    }
+
+}

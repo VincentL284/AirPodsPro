@@ -1,0 +1,16 @@
+.texture{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: brightness(180%);
+    z-index: -1;
+}
+.texture_left{
+    
+    left: 0;
+    
+}
+.texture_right{
+    
+    right: 0;
+}

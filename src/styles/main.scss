@@ -29,6 +29,12 @@
 @import 'components/icons';
 @import 'components/header';
 @import 'components/hero';
+@import 'components/presentation';
+@import 'components/cp';
+@import 'components/spec';
+
+
+
 
 
 
@@ -37,6 +43,10 @@
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 @import 'utilities/accessibility';
 @import 'utilities/spacing';
+@import 'utilities/textures';
+@import 'utilities/shadow';
+
+
 
 @import '../../node_modules/swiper/swiper.scss';
 @import '../../node_modules/swiper/modules/pagination/pagination';

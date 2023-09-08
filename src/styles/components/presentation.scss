@@ -1,0 +1,13 @@
+.presentation{
+    position: relative;
+    .presentation_content{
+        .black_link{
+            color: var(--color-black);
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+    
+}
