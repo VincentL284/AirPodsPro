@@ -4,18 +4,20 @@
    ========================================================================== */
 
 a {
-    color: var(--color-primary);
+    color: var(--color-white);
     text-decoration: none;
-    transform: scale(100%);
-    transition: all 0.2s ease-out;
+    
+    
 
-    &:hover {
-        color: var(--color-primary);
-        text-decoration: none;
-        transform: scale(150%);
-    }
-
-    &.disabled {
-        color: #e2e2e2;
+    
+}
+button{
+    color: var(--color-white);
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: var(--color-bg-secondary);
+    border: none;
+    &:hover{
+        cursor: pointer;
     }
 }
