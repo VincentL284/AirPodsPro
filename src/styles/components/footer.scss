@@ -1,0 +1,53 @@
+footer{
+
+    background: var(--color-black);
+    color: var(--color-white-on-black);
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .mentions{
+        text-align: right;
+        h2{
+            margin-bottom: 0;
+        }
+        nav ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+            gap: 30px;
+            transition: all 0.2s ease-out;
+            li{
+                &:hover{
+                    transform: scale(120%);
+                }
+            }
+        }
+    }
+
+    fieldset{
+        border: none;
+        margin: 20px 0;
+        width: 400px;
+        padding: 20px 0;
+        position: relative;
+
+        input{
+            border-radius: 20px;
+            width: 100%;
+            height: 40px;
+            
+        }
+        label{
+            position: absolute;
+            color: rgba(0, 0, 0, 0.25);
+            margin-left: 15px;
+        }
+    }
+
+
+}

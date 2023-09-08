@@ -6,6 +6,14 @@
 a {
     color: var(--color-white);
     text-decoration: none;
+    transition: all 0.1s ease-out;
+
+
+    &:hover{
+        transform: scale(120%);
+        color: #7397cc;
+
+    }
     
     
 
@@ -17,7 +25,11 @@ button{
     border-radius: 20px;
     background: var(--color-bg-secondary);
     border: none;
+    transition: all 0.2s ease-out;
     &:hover{
         cursor: pointer;
+        transform: scale(120%);
+        
+
     }
 }
