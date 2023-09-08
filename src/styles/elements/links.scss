@@ -1,0 +1,21 @@
+/* ==========================================================================
+   LINKS / ELEMENTS
+   Style de base de tous les liens et bouton du site
+   ========================================================================== */
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transform: scale(100%);
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        color: var(--color-primary);
+        text-decoration: none;
+        transform: scale(150%);
+    }
+
+    &.disabled {
+        color: #e2e2e2;
+    }
+}
