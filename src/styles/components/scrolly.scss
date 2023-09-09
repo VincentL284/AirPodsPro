@@ -2,7 +2,7 @@
     [data-scrolly='fromBottom'] {
         opacity: 0;
         transform: translateY(60px);
-        transition: all 0.4s ease-out;
+        transition: all 0.8s ease-out;
         &.is-active {
             opacity: 1;
             transform: translateY(0);
@@ -12,7 +12,7 @@
     [data-scrolly='fromLeft'] {
         opacity: 0;
         transform: translateX(-60px);
-        transition: all 0.4s ease-out;
+        transition: all 0.8s ease-out;
         &.is-active {
             opacity: 1;
             transform: translateX(0);
@@ -22,7 +22,7 @@
     [data-scrolly='fromRight'] {
         opacity: 0;
         transform: translateX(60px);
-        transition: all 0.4s ease-out;
+        transition: all 0.8s ease-out;
         &.is-active {
             opacity: 1;
             transform: translateX(0);
@@ -32,7 +32,7 @@
     [data-scrolly='fromTop'] {
         opacity: 0;
         transform: translateY(-60px);
-        transition: all 0.4s ease-out;
+        transition: all 0.8s ease-out;
         &.is-active {
             opacity: 1;
             transform: translateY(0);

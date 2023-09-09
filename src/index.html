@@ -4,12 +4,12 @@
 
 <section class="hero section_shadow">
     <div class="sm_wrapper">
-        <div class="hero_content">
+        <div class="hero_content" data-scrolly="fromLeft">
             <h1>Airpods Pro 2</h1>
         <p>Écoutez votre musique comme jamais auparavant grâce à la puissance des tout nouveaux airpods pro 2</p>
         <a href=""><button>Acheter</button></a>
         </div>
-        <div class="hero_img">
+        <div class="hero_img" data-scrolly="fromRight">
             <img src="assets/images/imghero.png" alt="Airpods pro 2 charging">
         </div>
         
@@ -23,8 +23,8 @@
     <div class="sm_wrapper">
         
         <div class="presentation_content">
-            <img class="shadow" src="assets/images/imageproduit.png" alt="AirPodsPro2 demo">
-            <div>
+            <img class="shadow" src="assets/images/imageproduit.png" alt="AirPodsPro2 demo" data-scrolly="fromTop">
+            <div data-scrolly="fromBottom">
                 <h2>Présentation du produit</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui scelerisque etiam imperdiet lectus. Non at id enim, dui libero volutpat sodales aliquam et. Sed nibh enim faucibus tellus, odio consequat eleifend at habitant.</p>
             <a class="black_link" href="">Seulement 329$</a>
@@ -37,10 +37,10 @@
 
 <section class="caracteristiques section_shadow">
     <div class="sm_wrapper">
-        <h2>Caractéristiques du produit</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed elementum id dapibus mi lectus mi. Adipiscing tellus maecenas duis leo tempus sem ut.</p>
+        <h2 data-scrolly="fromBottom">Caractéristiques du produit</h2>
+        <p data-scrolly="fromBottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed elementum id dapibus mi lectus mi. Adipiscing tellus maecenas duis leo tempus sem ut.</p>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-scrolly="fromLeft">
                 <a href="">
                     <img src="assets/images/spatial.png" alt="Audio spatial">
                     <h4>Audio spatial</h4>
@@ -49,7 +49,7 @@
                 
             </div>
 
-            <div class="card">
+            <div class="card" data-scrolly="fromBottom">
                 <a href="">
                     <img src="assets/images/micro.png" alt="Micro">
                     <h4>Microphone intégré</h4>
@@ -58,7 +58,7 @@
                 
             </div>
 
-            <div class="card">
+            <div class="card" data-scrolly="fromRight">
                 <a href="">
                     <img src="assets/images/capteur.png" alt="Capteurs">
                     <h4>Capteurs intégrés</h4>
@@ -76,10 +76,10 @@
     <img class="texture texture_right" src="assets/images/texture2.png" alt="texture right">
 
     <div class="sm_wrapper">
-        <h2>Spécifications techniques</h2>
+        <h2 data-scrolly="fromBottom">Spécifications techniques</h2>
 
         <!-- Slider main container -->
-        <div class="swiper" data-component="Carousel" data-loop data-autoplay>
+        <div class="swiper" data-component="Carousel" data-loop data-autoplay data-scrolly="fromBottom">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -129,21 +129,24 @@
 
 <section class="faq">
     <div class="sm_wrapper">
-        <h2>Foire aux questions</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh cursus pulvinar in massa erat pharetra, et tristique risus. Ornare potenti amet, cursus ut id eu id. Vitae venenatis tempus pharetra in viverra a. </p>
-        <fieldset>
+        <h2 data-scrolly="fromBottom">Foire aux questions</h2>
+        <p data-scrolly="fromBottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh cursus pulvinar in massa erat pharetra, et tristique risus. Ornare potenti amet, cursus ut id eu id. Vitae venenatis tempus pharetra in viverra a. </p>
+        <fieldset data-scrolly="fromBottom">
             <label class="form__label" for="question">Posez votre question</label>
             <input type="text" id="question" name="question">
             
         </fieldset>
-        <a href=""><button>Soumettre</button></a>
+        <div data-scrolly="fromBottom">
+            <a href=""><button>Soumettre</button></a>
+        </div>
+        
         
         
         
         <div class="questions" data-component="Accordion">
 
 
-            <div class="accordion__container js-header">
+            <div class="accordion__container js-header" data-scrolly="fromLeft">
                 <div class="accordion__header">
                     <h4>Configuration des airpods pro 2</h4>
                     <p>Comment configurer les airpods pro 2?</p>
@@ -161,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="accordion__container js-header">
+            <div class="accordion__container js-header" data-scrolly="fromBottom">
                 <div class="accordion__header">
                     <h4>Les garanties sur les airpods pro</h4>
                     <p>Quelles sont les garanties sur ce produit?</p>
@@ -179,7 +182,7 @@
                 </div>
             </div>
 
-            <div class="accordion__container js-header">
+            <div class="accordion__container js-header" data-scrolly="fromRight">
                 <div class="accordion__header">
                     <h4>Nettoyage des airpods pro 2</h4>
                     <p>Comment nettoyer mes airpods pro 2?</p>

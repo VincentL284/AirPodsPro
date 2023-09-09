@@ -15,12 +15,10 @@
 
         height: 600px;
         
-        .swiper-pagination-bullet{
-            
-        }
+        
         @media screen and (max-width: $breakpoint-sm) {
             height: 100%;
-                
+            text-align: center;
         }
         
         .swiper-slide{
