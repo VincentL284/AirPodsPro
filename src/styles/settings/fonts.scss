@@ -7,6 +7,10 @@
     --font-secondary: 'Saira', sans-serif;
 
     --font-size-content: 2.4rem;
+    @media screen and (max-width: 1000px) {
+        --font-size-content: 1.8rem;
+            
+    }
 
     /// Grosseur des textes
     --font-size-h1: 6.4rem;

@@ -13,8 +13,16 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
         margin-top: 50px;
+        @media screen and (max-width: $breakpoint-sm) {
+            grid-template-columns: 1fr;
+                
+        }
 
         .card{
+
+            border: 2px solid transparent;
+            padding: 30px;
+            border-radius: 20px;
             h4{
                 margin-bottom: 0;
             }
@@ -22,8 +30,13 @@
                 transition: all 0.2s ease-out;
             }
             &:hover{
+                border: 2px solid #7397cc;
                 img{
                     transform: scale(125%);
+                }
+                a{
+                    color: #7397cc;
+
                 }
             }
         }

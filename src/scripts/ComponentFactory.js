@@ -1,8 +1,7 @@
 import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Accordion from './components/Accordion';
-
-
+import Scrolly from './components/Scrolly';
 
 export default class ComponentFactory {
   constructor() {
@@ -11,6 +10,7 @@ export default class ComponentFactory {
       Carousel,
       Header,
       Accordion,
+      Scrolly,
     };
     this.init();
   }

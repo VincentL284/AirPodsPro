@@ -1,6 +1,7 @@
 header{
     background-color: var(--color-black);
     position: sticky;
+    z-index: 20;
 
     .header-is-hidden.is-scrolling-down & {
         transform: translateY(-100%) translateY(4px);
@@ -21,21 +22,20 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 40%;
     height: 80vh;
-    padding-top: var(--header-height);
-    padding-right: 20px;
+    padding: 50px;
     display: flex;
     border-radius: 10px;
     text-align: right;
     list-style-type: none;
     
     overflow-y: auto;
-    z-index: 1;
+    z-index: 10;
     transform: translateX(200%);
     transition: all 0.5s ease-out;
 
-    @media screen and (min-width: $breakpoint-ml) {
+    @media screen and (min-width: $breakpoint-sm) {
         transform: none;
         position: relative;
         height: auto;
@@ -46,6 +46,10 @@ header{
         overflow-y: hidden;
         background: transparent;
     }
+    @media screen and (max-width: $breakpoint-sm) {
+    width: 60%;
+        
+    }
     ul {
         display: flex;
         flex-direction: column;
@@ -55,7 +59,7 @@ header{
         padding: 0;
         width: 100%;
         margin: auto;
-        @media screen and (min-width: $breakpoint-ml) {
+        @media screen and (min-width: $breakpoint-sm) {
             flex-direction: row;
         }
     }
@@ -84,9 +88,9 @@ header{
     position: relative;
     width: var(--bar-width);
     height: 50px;
-    z-index: 5;
+    z-index: 15;
     display: block;
-    @media screen and (min-width: $breakpoint-ml) {
+    @media screen and (min-width: $breakpoint-sm) {
         display: none;
     }
 

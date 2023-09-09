@@ -6,6 +6,35 @@
 
     fieldset{
         border: none;
+        position: relative;
+        margin: 20px 0;
+
+        input{
+            border-radius: 20px;
+            width: 50%;
+            height: 50px;
+            margin-left: 10px;
+            @media screen and (max-width: $breakpoint-ml) {
+                width: 60%;
+            }
+            
+        }
+        label{
+            position: absolute;
+            color: rgba(0, 0, 0, 0.25);
+            margin-left: 15px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            @media screen and (max-width: $breakpoint-ml) {
+                position: static;
+                color: var(--color-white-on-black);
+                
+
+                    
+            }
+            
+        }
     }
 
     .questions{
@@ -13,6 +42,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 60px;
+        @media screen and (max-width: $breakpoint-ml) {
+            grid-template-columns: 1fr;
+        }
         h4{
             margin: 0;
         }

@@ -14,11 +14,34 @@
     .swiper{
 
         height: 600px;
+        
+        .swiper-pagination-bullet{
+            
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            height: 100%;
+                
+        }
+        
         .swiper-slide{
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 60px;
+            @media screen and (max-width: $breakpoint-sm) {
+                flex-direction: column-reverse;
+                gap: 20;
+                    
+            }
+
+            img{
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 50%;
+                    height: 50%;
+                        
+                }
+            }
         }
     }
 }

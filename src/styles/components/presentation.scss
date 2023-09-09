@@ -8,6 +8,14 @@
         justify-content: space-between;
         align-items: center;
         gap: 60px;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column-reverse;
+            padding: 30px 0;
+            gap: 0;
+            
+                
+        }
     }
     
 }
