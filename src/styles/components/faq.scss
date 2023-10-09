@@ -15,7 +15,7 @@
             height: 50px;
             margin-left: 10px;
             @media screen and (max-width: $breakpoint-ml) {
-                width: 60%;
+                width: 100%;
             }
             
         }
@@ -29,9 +29,6 @@
             @media screen and (max-width: $breakpoint-ml) {
                 position: static;
                 color: var(--color-white-on-black);
-                
-
-                    
             }
             
         }
